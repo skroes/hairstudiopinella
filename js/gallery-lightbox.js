@@ -144,6 +144,7 @@
     restoreFocusTo = document.activeElement instanceof HTMLElement ? document.activeElement : null;
     document.body.classList.add("lightbox-open");
     overlay.hidden = false;
+    overlay.style.display = "";
 
     showAt(index);
 
@@ -155,6 +156,7 @@
     if (!overlay) return;
 
     overlay.hidden = true;
+    overlay.style.display = "none";
     document.body.classList.remove("lightbox-open");
     document.removeEventListener("keydown", onKeyDown);
 
