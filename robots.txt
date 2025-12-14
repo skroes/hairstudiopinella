@@ -1,6 +1,4 @@
 User-agent: *
-Disallow: /i18n/
-Disallow: /js/
-Disallow: /plugins/
-Disallow: /scss/
-Disallow: /themes/
+Allow: /
+
+Sitemap: https://www.hairstudiopinella.nl/sitemap.xml
