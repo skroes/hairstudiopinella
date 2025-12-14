@@ -464,16 +464,12 @@ body.lightbox-open {
 /* Responsive */
 @media (max-width: 768px) {
     .header-inner {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
     }
 
     .logo img {
-        width: 120px;
-    }
-
-    .main-nav {
-        align-self: flex-end;
+        width: 100px;
     }
 
     .main-nav ul {
@@ -482,8 +478,8 @@ body.lightbox-open {
     }
 
     .main-nav a {
-        padding: 0.5rem 0.75rem;
-        font-size: 0.85rem;
+        padding: 0.4rem 0.6rem;
+        font-size: 0.8rem;
     }
 
     .header-contact {
