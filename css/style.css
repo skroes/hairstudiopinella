@@ -83,11 +83,23 @@ header {
     transition: all 0.3s ease;
 }
 
-.main-nav a:hover,
-.main-nav a.btn-primary {
+.main-nav a:hover {
     background: #fff;
     color: #7C6A55;
     opacity: 1;
+}
+
+/* Primaire CTA - altijd opvallend */
+.main-nav a.btn-primary {
+    background: #fff;
+    color: #7C6A55;
+    font-weight: 600;
+}
+
+/* Huidige pagina - subtiele indicatie */
+.main-nav a.active {
+    border: 2px solid #fff;
+    background: transparent;
 }
 
 .header-contact {
