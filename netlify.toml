@@ -1,3 +1,76 @@
+# Cache headers
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Redirects voor oude URLs
+[[redirects]]
+  from = "/contact/index.html"
+  to = "/contact.html"
+  status = 301
+
+[[redirects]]
+  from = "/contact/"
+  to = "/contact.html"
+  status = 301
+
+[[redirects]]
+  from = "/fotos/index.html"
+  to = "/fotos.html"
+  status = 301
+
+[[redirects]]
+  from = "/fotos/"
+  to = "/fotos.html"
+  status = 301
+
+[[redirects]]
+  from = "/afspraak/index.html"
+  to = "/afspraak.html"
+  status = 301
+
+[[redirects]]
+  from = "/afspraak/"
+  to = "/afspraak.html"
+  status = 301
+
+[[redirects]]
+  from = "/route/index.html"
+  to = "/route.html"
+  status = 301
+
+[[redirects]]
+  from = "/route/"
+  to = "/route.html"
+  status = 301
+
+[[redirects]]
+  from = "/index_org.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/afspraak_org.html"
+  to = "/afspraak.html"
+  status = 301
+
+[[redirects]]
+  from = "/archive/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/download/*"
+  to = "/"
+  status = 301
+
+# 404 fallback
 [[redirects]]
   from = "/*"
   to = "/error.html"

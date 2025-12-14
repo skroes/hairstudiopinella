@@ -14,7 +14,6 @@ body {
     font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
     color: #fff;
     background: linear-gradient(135deg, #4a3f33 0%, #2a2520 100%);
-    background-attachment: fixed;
     min-height: 100vh;
     line-height: 1.6;
 }
@@ -210,6 +209,7 @@ footer {
     margin-bottom: 2rem;
 }
 
+.content-block h1,
 .content-block h2 {
     font-size: 1.75rem;
     font-weight: 400;
