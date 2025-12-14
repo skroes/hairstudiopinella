@@ -319,6 +319,14 @@ footer {
     color: #7C6A55;
 }
 
+/* Salonized Widget */
+.salonized-widget {
+    min-height: 700px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
 /* Address Info */
 .address-info {
     line-height: 2;
