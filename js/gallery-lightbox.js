@@ -59,7 +59,14 @@
     document.body.appendChild(overlay);
 
     overlay.addEventListener("click", (event) => {
-      if (event.target === overlay) closeLightbox();
+      const target = event.target instanceof Element ? event.target : null;
+      if (!target) return;
+
+      if (target.closest(".lightbox-media")) return;
+      if (target.closest(".lightbox-prev, .lightbox-next")) return;
+      if (target.closest(".lightbox-close")) return;
+
+      closeLightbox();
     });
 
     closeButton.addEventListener("click", closeLightbox);
@@ -173,4 +180,3 @@
     });
   });
 })();
-
