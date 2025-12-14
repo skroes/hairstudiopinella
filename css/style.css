@@ -472,8 +472,13 @@ body.lightbox-open {
         width: 120px;
     }
 
+    .main-nav {
+        align-self: flex-end;
+    }
+
     .main-nav ul {
-        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     .main-nav a {
